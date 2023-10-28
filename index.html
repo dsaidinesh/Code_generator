@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEHELP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="intro-container">
+        <div class="intro-animation">
+            <!-- You can add your Netflix-style animation elements here -->
+        </div>
+    </div>
+    
+    <!-- Main Code Generator Container (Initially Hidden) -->
+    <div class="code-generator-container">
+        <h1>Code Generator</h1>
+        
+        <label for="problemStatement">Enter Problem Statement or Task:</label>
+    <textarea id="problemStatement" rows="5" cols="50"></textarea>
+    
+    <label for="language">Select a Programming Language:</label>
+    <select id="language">
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <!-- Add more language options as needed -->
+    </select>   
+        <button id="generateBtn">Generate Code</button>
+        <div id="codeOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

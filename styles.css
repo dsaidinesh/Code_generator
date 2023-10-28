@@ -1,0 +1,73 @@
+/* Reset default margin and padding */
+body, h1, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire body */
+body {
+    background-color: #a2d2ff; /* Light blue background */
+    color: #333; /* Dark gray text */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style the header (Code Generator title) */
+h1 {
+    color: #ffafcc; /* Light pink heading color */
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* Style the Code Generator container */
+.code-generator-container {
+    background-color: #bdb4db; /* Purple container background */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Style the input field for the problem statement */
+#problemStatement {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ffc8dd; /* Light pink border */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark gray text */
+    margin-top: 20px;
+}
+
+/* Style the language selection dropdown */
+#language {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ffc8dd;
+    background-color: #fff;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Style the Generate Code button */
+#generateCode {
+    background-color: #cdb4db; /* Purple button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Style the code output area */
+#codeOutput {
+    border: 2px solid #ffc8dd; /* Light pink border */
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #333;
+    font-family: monospace;
+}
