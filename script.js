@@ -1,5 +1,5 @@
 // Replace 'YOUR_API_KEY' with your actual API key or credentials
-const apiKey = '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';
+const apiKey = '...........';
 
 
 const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
