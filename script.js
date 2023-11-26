@@ -4,10 +4,8 @@ const apiKey = '...........';
 
 const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
 
-// Generate code function
 async function generateCode(prompt) {
 
-  // Call OpenAI API
   const response = await fetch(apiUrl, {
     method: 'POST',
     headers: {
@@ -22,7 +20,7 @@ async function generateCode(prompt) {
     })
   });
   
-  // Handle response  
+    
   const data = await response.json(); 
   if(response.ok) {
     return data.choices[0].text; 
@@ -32,22 +30,17 @@ async function generateCode(prompt) {
 
 }
 
-// Click handler
 generateBtn.addEventListener('click', async () => {
 
-  // Get input
   const problemStatement = document.getElementById('problemStatement');
 
-  // Validate input
   if(!problemStatement) {
     alert('Please enter a problem statement');
     return;
   }
 
-  // Generate prompt
   const prompt = `${problemStatement}\n\n// Write code to solve the above problem:`;
 
-  // Call API
   try {
     const code = await generateCode(prompt);
     codeOutput.textContent = code;
